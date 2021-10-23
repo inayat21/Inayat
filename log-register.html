@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatiable " content="ie=edge">
+    <title>Inayat &#45; Login &#47; Register</title>
+    <link rel="stylesheet" href="css/log-register.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:wght@400;600;700&family=MonteCarlo&family=Oswald:wght@300;400;500;700&family=Poppins:wght@100;300;400;600;700&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    
+</head>
+
+<body bgcolor="#59bfff">
+    <!-- bgcolor="#728FCE" -->
+
+    <div class="container">
+        <div class="logo">
+            <img src="images/IN.png" width="100px" height="100px" alt="Inayat"><br>
+        </div>
+        <h1>Welcome to INAYAT!</h1>
+    </div>
+    <div class="form-box">
+
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="chech-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form id="register" class="input-group">
+            <div class="dropdown">
+                <input type="hidden">
+                <select>
+                             <option  style="font-family: 'arial';">Login as</option>
+                            <option >Student</option>
+                            <option value="">Intern</option>
+                            <option value="">Mentor</option>
+                            <option value="">Employee</option>
+                        </select>
+            </div><br><br>
+            <input type="text" class="input-field" placeholder="Name" required>
+            <input type="text" class="input-field" placeholder="Contact" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="chech-box"><span>I agree to the terms and conditions.</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+        <!-------Social Icons Starts------->
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/nurturethenurturers/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/___i_n_a_y_a_t___/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/nurturethenurturers/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC7GGOG6czuqmVApljlf2Beg/featured"><i class="fa fa-youtube"></i></a>
+        </div>
+
+        <!-------Social Icons Ends------->
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700');
+
+ body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.footrow {
+  display: flex;
+  flex-wrap: wrap;  
+}
+.footcolumn {
+  flex: 25%;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  color: #000;    
+}
+.footcolumn p{
+    line-height: 30px;
+    cursor: pointer;
+}
+.footcolumn a{
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footcolumn a:hover{
+    color: #c91d1d;
+}
+.footcolumn h2{
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;    
+}
+@media screen and (max-width: 992px) {
+.footcolumn {
+    flex: 25%;
+  }   
+}
+@media screen and (max-width: 600px) {
+.footrow {
+    flex-direction: column;
+  }
+}
+.googleplay img{
+    height: 130px;
+    width: 200px;
+    margin-top: -15px;
+}
+.appstore img{
+    height: 130px;
+    width: 200px;
+}
+@media(max-width: 700px){
+.googleplay img{
+    height: 90px;
+    width: 130px;
+}
+.appstore img{
+    height: 90px;
+    width: 130px;
+}
+}
+.social-icons{
+    text-align: center;
+}
+.fa {
+  padding: 5px;
+  font-size: 18px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.b-footer {
+text-align: center;
+color: #fff;
+padding-top: 15px;
+padding-bottom: 15px;
+width: 100%;
+background-color: #000;
+}
+.b-footer p{
+    color: #fff;
+}
+.app-btn{
+    display: inline-block;
+    padding: 0px;
+    position: relative;
+    cursor: pointer;
+}
+.googleplay, .appstore img{
+    margin-bottom: -40px;
+}
